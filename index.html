@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Lista de Tarefas</title>
+</head>
+<body class="container">
+    <header class="header">
+        <h1 class="title">Minhas Tarefas</h1>
+        <nav class="task-search">
+            <form action="" class="search-form">
+                <input type="text" class="search-input" placeholder="Pesquisar Tarefa">
+                <button class="search-button"></button>
+            </form>
+        </nav>
+    </header>
+    <main class="content-container">
+        <div class="add-task">
+            <h2 class="add-task-title">Inserir Tarefa</h2>
+            <form action="" class="task-form">
+                <input type="text" class="task-name-input" placeholder="Digite o título da tarefa" required>
+                <select name="urgencia" id="urgency-select" required>
+                    <option value="">Selecione o tipo de atividade</option>
+                    <option value="1">Pouco importante</option>
+                    <option value="2">Importante</option>
+                    <option value="3">Urgente</option>
+                </select>
+                <button class="add-task-button">Adicionar Tarefa na lista</button>
+            </form>
+        </div>
+
+        <div class="task-list-div">
+            <h2 class="task-list-title">Tarefas</h2>
+            <ul id="task-list">
+                <!-- <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color urgent"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color important"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+                <li class="task-list-item">
+                    <div class="task-div">
+                    <span class="task-urgency-color"></span>
+                    <p class="task-name">tarefa teste</p>
+                    </div>
+                    <button class="remove-task-button"></button>                  
+                </li>
+ -->
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>

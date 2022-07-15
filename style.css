@@ -1,0 +1,199 @@
+*{
+    background-color: #f9f7f0;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #072a40;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+.title{
+    margin: 0;
+    color: #178ca4;
+}
+.task-search{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    width: 30%;
+}
+.search-form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-input{
+    height: 85%;
+    width: 90%;
+    font-size: large;
+    border: hidden;
+}
+.search-input:focus{
+    outline: none;
+}
+.search-button{
+    height: 85%;
+    width: 10%;
+    background-image: url(./src/img/icons/loupe-icon.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    border: hidden;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.search-button:hover{
+    background-image: url(./src/img/icons/loupe-icon-active.png);
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+}
+.add-task{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.add-task-title{
+    margin: 0;
+}
+.task-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    align-content: space-between;
+}
+.task-name-input{
+    width: 45%;
+    height: 45%;
+    outline: none;
+    border: none;
+    font-size: large;
+}
+#urgency-select{
+    width: 45%;
+    height: 45%;
+    outline: none;
+    border: none;
+    font-size: large;
+    color: #757575;
+    cursor: pointer;
+}
+
+.add-task-button{
+    width: 100%;
+    height: 50%;
+    font-size: large;
+    border-radius: 8px;
+    
+    border: hidden;
+    background-color: #072a40;
+    color: #f9f7f0;
+    cursor: pointer;
+}
+.add-task-button:hover{
+    border: 2px solid #00BBA9;
+    box-shadow: 0px 0px 20px -7px #072a40;
+}
+
+.task-list-div{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.task-list-title{
+    margin: 20px 0;
+}
+
+#task-list{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow-y: scroll;
+    padding-right: 15px;
+}
+#task-list::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+}
+#task-list::-webkit-scrollbar-thumb{
+    background-color: #072a40;
+    border-radius: 10px;
+}
+.task-list-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 20px;
+    font-size: large;
+    align-items: center;
+}
+.task-urgency-color{
+    width: 10px;
+    height: 10px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background-color: #00BBA9;
+}
+.urgent{
+    background-color: #F55237;
+}
+.important{
+    background-color: #cfcd35;
+}
+
+.task-name{
+    margin: 0;
+}
+.task-div{
+    margin: 0;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.remove-task-button{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    background-image: url(./src/img/icons/trash-bin-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.remove-task-button:hover{
+    background-image: url(./src/img/icons/trash-bin-icon-active.png);
+}
