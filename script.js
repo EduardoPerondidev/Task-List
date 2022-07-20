@@ -78,6 +78,12 @@ searchForm.addEventListener('submit', function(e){
     filterList(taskSearched)
     taskSearchedInput.value = ''
 })
+
+searchForm.addEventListener('input', function(e){
+    let taskSearched = document.querySelector('.search-input').value
+    filterList(taskSearched)
+})
+
 function filterList(string){
     let filteredArray = []
     let input = string.toLowerCase()
