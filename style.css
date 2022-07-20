@@ -158,6 +158,8 @@
     margin-bottom: 20px;
     font-size: large;
     align-items: center;
+    animation-name: opacity;
+    animation-duration: 0.3s;
 }
 .task-urgency-color{
     width: 10px;
@@ -196,4 +198,13 @@
 }
 .remove-task-button:hover{
     background-image: url(./src/img/icons/trash-bin-icon-active.png);
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
